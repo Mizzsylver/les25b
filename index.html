@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Les 25</title>
+<script
+src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#knop").click(function() {
+var naam = $("#idTekstveld1").val();
+var dier = $("#idTekstveld2").val();
+var kleur = $("#idTekstveld3").val();
+var maand = $("#idTekstveld4").val();
+var snoep = $("#idTekstveld5").val();
+window.alert(
+"Op een zonnige ochtend in " + maand + " liep " + naam +
+" met de " + dier + " in het park. De lucht kleurde " + kleur + ". In de verte zag " + naam +
+" nog een " + dier + " aan komen rennen " + naam + " ging op een " + kleur + " bankje zitten en keek hoe de " + dier +
+ " aan het spelen was. Uit een tas kwam een zak " + snoep + " en " + naam + " deelde het uit aan iedereen die wilde. EINDE");
+});
+});
+</script>
+</head>
+<body>
+<h3>Maak je verhaal</h3>
+<p>Vul hieronder de vakjes in en klik vervolgens onderaan op de knop en lees je verhaal.</p>
+<form>
+Wat is je naam?
+<input type="text" id="idTekstveld1"><br><br>
+Wat is je favoriete dier?
+<input type="text" id="idTekstveld2"><br><br>
+Wat is je lievelingskleur?
+<input type="text" id="idTekstveld3"><br><br>
+Wat is de maand waarin je jarig bent?
+<input type="text" id="idTekstveld4"><br><br>
+Wat is je lievelings snoepje?
+<input type="text" id="idTekstveld5"><br><br>
+<input id="knop" name="knop" type="button"
+value="Lees hier het verhaal">
+</form>
+<noscript>
+    Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+    </noscript>
+</body>
+</html>
